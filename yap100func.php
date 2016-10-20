@@ -203,7 +203,7 @@ function myGetThumbHtml($status_text) {
 // DBに登録
 function intoDB($id,$user,$text1,$text2,$url,$geo_k,$geo_i,$time,$tstamp,$source) {
   // DB情報読み込み
-  require('適切なファイルを作ること');
+  require('適当なディレクトリ/env.inc');
 
   $db=mysql_connect($hostname,$username,$password);
   if (!$db)
@@ -223,7 +223,7 @@ function intoDB($id,$user,$text1,$text2,$url,$geo_k,$geo_i,$time,$tstamp,$source
 // DBにすでに存在するかどうかの検索
 function ifTweetExist($tid){
   // DB情報読み込み
-  require('適切なファイルを作ること');
+  require('適当なディレクトリ/env.inc');
 
   $db=mysql_connect($hostname,$username,$password);
   if (!$db)
@@ -245,7 +245,7 @@ function ifTweetExist($tid){
 // Tweet IDの最大値を返す
 function maxTweetID() {
   // DB情報読み込み
-  require('適切なファイルを作ること');
+  require('適当なディレクトリ/env.inc');
 
   $db=mysql_connect($hostname,$username,$password);
   if (!$db)
